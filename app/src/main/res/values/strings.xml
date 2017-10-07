@@ -2,4 +2,6 @@
     <string name="app_name">JsonService</string>
     <string name="startServiceButton">Start Service</string>
     <string name="json_service_description">Downloads data from internet on background</string>
+    <string name="image_notification_title">Image downloaded</string>
+    <string name="image_notification_text">new image downloaded and available to view</string>
 </resources>

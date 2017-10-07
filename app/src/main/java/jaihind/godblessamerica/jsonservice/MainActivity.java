@@ -22,7 +22,13 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         startServiceButton = (Button) findViewById(R.id.start_service_button);
         imageView = (ImageView)findViewById(R.id.dog_image_view);
-        imageView.setImageResource(R.drawable.loading);
+        String imgUrl = getIntent().getStringExtra("notificationresult");
+        Picasso.with(this)
+                .load(imgUrl)
+                .placeholder(R.drawable.loading)
+                .error(R.drawable.loading)
+                .resize(800,800)
+                .into(imageView);
         startServiceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
