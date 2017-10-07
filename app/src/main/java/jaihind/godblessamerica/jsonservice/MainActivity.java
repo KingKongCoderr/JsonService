@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity  {
                     .resize(800,800)
                     .placeholder(R.drawable.loading)
                     .into(imageView);
+            stopService(new Intent(MainActivity.this, MyJsonService.class));
         }
         
     }

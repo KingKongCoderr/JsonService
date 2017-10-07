@@ -92,10 +92,10 @@ public class MyJsonService extends Service {
                         e.printStackTrace();
                     }
                 }
-                stopService(new Intent(MyJsonService.this, MyJsonService.class));
             } else {
                 Log.e("response_failure", response.code() + "");
             }
+            stopSelf();
         }
         
         @Override
