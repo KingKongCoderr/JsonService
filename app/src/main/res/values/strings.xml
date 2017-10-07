@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JsonService</string>
+    <string name="startServiceButton">Start Service</string>
+    <string name="json_service_description">Downloads data from internet on background</string>
+</resources>
